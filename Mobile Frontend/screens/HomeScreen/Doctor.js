@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, Pressable, ScrollView } from 'react-native';
-import Navigation from '../../components/Navigation';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 function Doctor({ navigation, route}) {
@@ -27,10 +26,11 @@ function Doctor({ navigation, route}) {
 
 
         }} onPress={() => {
-          navigation.navigate('Chat')
+          navigation.navigate('Chat', {
+            name: name,
+          })
         }}>
-
-          <Text style={{ color: "white", textAlign: "center", marginTop: 10, fontSize: 20, fontWeight: "bold" }}>Emergency contact</Text>
+          <Text style={{ color: "white", textAlign: "center", marginTop: 10, fontSize: 20, fontWeight: "bold" }}>Contact Doctor</Text>
         </Pressable>
         <Pressable style={{
           width: 250,
@@ -44,7 +44,7 @@ function Doctor({ navigation, route}) {
   
         }}>
 
-          <Text style={{ color: "white", textAlign: "center", marginTop: 10, fontSize: 20, fontWeight: "bold" }}>Schedule visit</Text>
+          <Text style={{ color: "white", textAlign: "center", marginTop: 10, fontSize: 20, fontWeight: "bold" }}>Schedule Visit</Text>
         </Pressable>
 
 

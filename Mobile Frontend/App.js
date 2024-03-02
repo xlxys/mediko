@@ -1,11 +1,9 @@
-import Chat from './screens/HomeScreen/Chat';
 import Home from './screens/HomeScreen/Home';
 import Tests from './screens/HomeScreen/Tests';
 import Profile from './screens/HomeScreen/Profile';
 
 
 import { createStackNavigator } from '@react-navigation/stack';
-import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
@@ -32,14 +30,7 @@ export default function App() {
           ),
         }}
         />
-        <Tab.Screen name="Tracker" component={Chat} 
-          options={{
-            tabBarLabel: 'Chat',
-            tabBarIcon: ({ color, size }) => (
-              <Ionicons name="chatbubbles" color={color} size={size} />
-          ),
-        }}
-        />
+      
         <Tab.Screen name="Tests" component={Tests} 
           options={{
             tabBarLabel: 'Tests',
