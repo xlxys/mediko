@@ -1,8 +1,10 @@
 import React from "react";
 import { GiftedChat } from 'react-native-gifted-chat';
 
-export default function Chat() {
+export default function Chat({route}) {
   const [messages, setMessages] = React.useState([]);
+
+  const { name, img } = route.params;
 
   React.useEffect(() => {
     setMessages([
@@ -12,8 +14,7 @@ export default function Chat() {
         createdAt: new Date(),
         user: {
           _id: 2,
-          name: "React Native",
-          avatar: require("../../assets/doctor2.png"),
+          name: name,
         },
       },
     ]);
