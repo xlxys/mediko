@@ -1,0 +1,42 @@
+:root {
+  --dark-blue: #232d53;
+  --blue: #486cf6;
+}
+
+.box {
+  border: #232d53 solid 2px;
+  width: 25%;
+  height: 25rem;
+  border-radius: 1rem;
+  margin: auto;
+  margin-top: 15rem;
+  padding-left: 8rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+  margin-top: 3rem;
+  margin-left: 5.5rem;
+  width: 9rem;
+}
+
+.box > h2 {
+  font-size: 1.65rem;
+  margin-top: 2.5rem;
+}
+
+.box > input {
+  width: 20rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+}
+
+.box > button {
+  width: 20.5rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: none;
+  background-color: var(--blue);
+  height: 2.5rem;
+  font-size: 1rem;
+}
